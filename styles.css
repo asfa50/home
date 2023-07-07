@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
+
+html{
+  font-family: 'Work Sans', sans-serif;
+}
 
 body {
   background-color: #010101;
-  display: flex;
+}
+
+.container {
   width: 1216px;
   padding: 0 104px;
   align-items: flex-start;
   gap: 10px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .logo {
@@ -15,28 +23,29 @@ body {
   border-radius: 24px;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 0;
+.home-container-text {  
   color: rgba(227, 228, 230, 0.55);
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
   font-style: normal;
   font-size: 56px;
   font-weight: 300;
   line-height: 150%;
   letter-spacing: -1.12px;
+  
 }
 
+
+
 .thick-text {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 0;
 }
 
 .logo-container {
@@ -44,10 +53,19 @@ body {
   align-items: center;
 }
 
-.button-container {
+.menu-container {
   display: flex;
-  gap: 10px;
+  gap: 32px;
   align-items: center;
+}
+
+.menu-item {
+  color: var(--neutral-1, #E3E4E6);  
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
 }
 
 .homeb,
@@ -58,11 +76,18 @@ body {
 }
 
 .chevron-container {
-  position: fixed;
+  position: absolute;
   bottom: 42px;
   right: 50%;
-
-.chevron-down {
   width: 40px;
   height: 40px;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -96px;
 }
