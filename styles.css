@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+body {
+  background-color: #010101;
+  display: flex;
+  width: 1216px;
+  padding: 0 104px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.logo {
+  width: 96px;
+  height: 48px;
+  border-radius: 24px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  color: rgba(227, 228, 230, 0.55);
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -1.12px;
+}
+
+.thick-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.homeb,
+.workb,
+.aboutb {
+  width: 24px;
+  height: 24px;
+}
+
+.chevron-container {
+  position: fixed;
+  bottom: 42px;
+  right: 50%;
+
+.chevron-down {
+  width: 40px;
+  height: 40px;
+}
