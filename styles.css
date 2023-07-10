@@ -31,10 +31,7 @@ body {
   font-weight: 300;
   line-height: 150%;
   letter-spacing: -1.12px;
-  
 }
-
-
 
 .thick-text {
   color: rgba(255, 255, 255, 1);
@@ -66,6 +63,8 @@ body {
   font-weight: 600;
   line-height: 150%;
   text-transform: uppercase;
+  display: inline-block;
+  position: relative;
 }
 
 .homeb,
@@ -90,4 +89,25 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: -96px;
+}
+
+.menu-item:hover {
+  color: pink;
+}
+
+.menu-item::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 25s ease-in-out;
+}
+
+.menu-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
