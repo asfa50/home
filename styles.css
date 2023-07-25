@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
 
-html{
+html {
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -9,12 +9,9 @@ body {
 }
 
 .container {
-  width: 1216px;
+  max-width: 1216px;
   padding: 0 104px;
-  align-items: flex-start;
-  gap: 10px;
   margin: 0 auto;
-  position: relative;
 }
 
 .logo {
@@ -23,7 +20,22 @@ body {
   border-radius: 24px;
 }
 
-.home-container-text {  
+.home-container {
+  position: relative;
+  height: 100vh;
+}
+
+.home-container .container {
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container-text {
   color: rgba(227, 228, 230, 0.55);
   text-align: center;
   font-style: normal;
@@ -43,6 +55,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .logo-container {
@@ -57,7 +72,7 @@ body {
 }
 
 .menu-item {
-  color: var(--neutral-1, #E3E4E6);  
+  color: #E3E4E6;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -82,15 +97,6 @@ body {
   height: 40px;
 }
 
-.home-container {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -96px;
-}
-
 .menu-item:hover {
   color: pink;
 }
@@ -103,11 +109,168 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
+  background-color: #E3E4E6;
   transform-origin: bottom right;
-  transition: transform 25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 }
 
 .menu-item:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.clients-container-text {
+  width: 513px;
+  color: var(--neutral-2, rgba(227, 228, 230, 0.55));
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.clients-container {
+  padding-top: 80px;
+  padding-bottom: 130px;
+}
+
+.client-logos-container {
+  display: flex;
+  margin-top: 80px;
+  width: 1216px;
+  height: 60.5px;
+  padding: 16px 0px;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+.clogo {
+  visibility: visible;
+  position: absolute;
+}
+
+.client-logo-item svg path {
+  fill: #E3E4E6;
+}
+
+.client-logo-item:hover svg path {
+  fill: unset !important
+}
+
+.client-logo-item {
+  display: flex;
+  padding: 16px 0px;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+.work-container {
+  display: flex;
+  padding: 80px 110px 120px 110px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 97px;
+}
+
+.work-container-text {
+  font-size: 40px;
+  color: rgba(227, 228, 230, 0.55);
+}
+
+.work-container-header {
+  display: block;
+  border-radius: 16px;
+  margin-top: 97px;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 32px;
+}
+
+.workslideright {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.work-container-text {
+  gap: 32px;
+  align-items: flex-start;
+  align-self: stretch;
+  font-size: 32px;
+  font-style: normal;
+  color: rgba(227, 228, 230, 0.55)
+}
+
+.work-header-text {
+  font-size: 40px;
+  color: rgba(227, 228, 230, 0.55);
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 97px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  margin-bottom: 97px;
+}
+
+.card-header {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600px;
+  letter-spacing: 0.64px;
+  color: #E3E4E6;
+  text-transform: uppercase;
+  line-height: 150%;
+  margin-top: 32px;
+}
+
+.card-body {
+  font-family: Work Sans;
+  color: #E3E4E6;
+  font-size: 32px;
+  font-weight: 300px;
+  line-height: 150%;
+  font-style: normal;
+  margin-top: 16px;
+}
+
+.card-bottom {
+  font-size: 18px;
+  color: #E3E4E6;
+  font-style: normal;
+  font-weight: 300px;
+  line-height: 150%;
+  margin-top: 24px;
+}
+
+.card-button {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #E3E4E6;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(227, 228, 230, 0.55);
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  width: 131px;
+  margin-top: 32px;
+  margin-bottom: 97px;
+}
+
+.card2 .card-button {
+  background: linear-gradient(134deg, #BC3CD8 0%, #C54B8C 100%);
+}
+
+.column1 {
+  flex: 50%;
 }
