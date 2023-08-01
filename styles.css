@@ -26,7 +26,6 @@ body {
 }
 
 .home-container .container {
-  align-items: flex-start;
   gap: 10px;
   position: relative;
   height: 100vh;
@@ -339,4 +338,68 @@ body {
   gap: 32px;
   flex: 1 0 0;
   align-self: stretch;
+}
+
+.contact-container {
+  padding: 80px 424px 40px 424px;
+  text-align: center;
+}
+
+.contact-header {
+  font-size: 56px;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: -1.12px;
+  color: rgba(227, 228, 230, 0.55);
+  margin-bottom: 4px;
+}
+
+.contact-body {
+  font-size: 18px;
+  line-height: 150%;
+  color: #E3E4E6;
+  margin-bottom: 60px;
+}
+
+.contact-menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  gap: 56px;
+  margin-bottom: 80px;
+}
+
+.contact-menu-item {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-footer {
+  margin: 0 auto;
+  padding: 4px 0px;
+  display: flex;
+  color: rgba(227, 228, 230, 0.55);
+  font-size: 18px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.contact-menu-item svg path {
+  transition: fill 0.25s;
+}
+
+.contact-menu-item:hover svg path {
+  opacity: 100%;
+}
+
+.contact-menu-item:not(:hover) svg path {
+  opacity: 55%;
+}
+
+.contact-menu-item:hover {
+  transform: scale(1.1);
 }
