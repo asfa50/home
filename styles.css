@@ -119,10 +119,10 @@ body {
 }
 
 .clients-container-text {
-  width: 513px;
   color: var(--neutral-2, rgba(227, 228, 230, 0.55));
   font-size: 40px;
   line-height: 150%;
+  max-width: 513px;
 }
 
 .clients-container {
@@ -133,8 +133,6 @@ body {
 .client-logos-container {
   display: flex;
   margin-top: 80px;
-  width: 1216px;
-  height: 60.5px;
   padding: 16px 0px;
   justify-content: space-between;
   align-self: stretch;
@@ -306,7 +304,7 @@ body {
 }
 
 .info-column1 {
-  width: 613px;
+  max-width: 613px;
 }
 
 .info-body {
@@ -402,4 +400,115 @@ body {
 
 .contact-menu-item:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+  .home-container-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .client-logos-container {
+    flex-wrap: wrap;
+  }
+
+  .client-logo-item {
+    width: 45%;
+    text-align: center;
+  }
+
+  .client-logo-item svg {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .clients-container {
+    padding-bottom: 50px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .clients-container-text {
+    font-size: 24px;
+  }
+
+  .client-logos-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .work-container {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    display: block;
+    width: 100%;
+  }
+
+  .workpng1,
+  .workpng2,
+  .workpng3,
+  .workpng4 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .info-box-container {
+    display: block;
+    padding: 0 30px;
+    height: 100%;
+    column-count: 1;
+  }
+
+  .info-header {
+    font-size: 16px;
+  }
+
+  .info-body {
+    font-size: 24px;
+  }
+
+  .info-column2,
+  .info-column3 {
+    display: block;
+  }
+
+  .infoimg1,
+  .infoimg2,
+  .infoimg3 {
+    width: 40%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    padding: 0 30px;
+  }
+
+  .contact-header {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .contact-body {
+    font-size: 14px;
+  }
+
+  .contact-menu-item {
+    max-width: 48px;
+    max-height: 48px;
+  }
 }
