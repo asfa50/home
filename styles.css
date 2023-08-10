@@ -68,6 +68,12 @@ body {
   display: flex;
   gap: 32px;
   align-items: center;
+
+  a:link,
+  a:visited,
+  a:active {
+    color: #E3E4E6;
+  }
 }
 
 .menu-item {
@@ -460,7 +466,7 @@ body {
   .workpng2,
   .workpng3,
   .workpng4 {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -488,7 +494,7 @@ body {
   .infoimg1,
   .infoimg2,
   .infoimg3 {
-    width: 40%;
+    width: 100%;
     margin-top: 20px;
   }
 }
